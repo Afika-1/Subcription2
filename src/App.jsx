@@ -1,33 +1,68 @@
+import React from 'react'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import db from './firebase'
+// import firebase from "firebase/app"
 import './App.css'
+import Navbar from './components/navbar/Navbar'
+import MainBody from './components/mainCode/MainBody'
+import Snacks from './components/mainCode/snacks'
+import Veg from './components/mainCode/Veg'
+import { Crud } from './components/mainCode/index'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='cover'>
+        <Navbar />
+        <MainBody />
+        <Snacks/>
+        <Veg/>
+        <Crud />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* --------- Second web front-end----------- */}
+      {/* <div className='page'>
+        <div className='container'>
+          <div className='circle2'></div>
+          <div className='circle'></div>
+          
+          <form onSubmit={submitHandler} className='form'>
+            <h2>Don't miss out</h2>
+            <p> Subscribe to stay updated with our amazing deals and discounts</p>
+            <input type='email' onChange={inputHandler}  value={input}/>
+            <button type='submit'>Subscribe</button>
+          </form>
+        </div>
+      </div> */}
+
+      {/*------------- old web front-end -------------*/}
+
+      {/* <div>
+          <h2>Don't miss out</h2>
+          <p> Subscribe to stay updated with our amazing deals and discounts</p>
+          <div>
+            <span>01</span>
+            <small>Get premium discount</small>
+
+          </div>
+          <div>
+            <span>02</span>
+            <small>Get new deals updates instantly</small>
+            
+          </div>
+          <div>
+            <span>03</span>
+            <small>Get premium discount</small>
+            
+          </div>
+          <div>
+            <input type='email' placeholder='Enter email address'/>
+            <button>Subscribe</button>
+          </div>
+        </div> */}
+
+
+
     </>
   )
 }

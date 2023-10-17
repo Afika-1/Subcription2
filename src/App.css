@@ -1,16 +1,11 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -32,11 +27,95 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
-.card {
-  padding: 2em;
+ */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  background: linear-gradient(to right, #302222, #6d5a50);
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  z-index: 1
+}
+
+.circle2 {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  top: -45%;
+  left: -10%;
+  background: linear-gradient(to right, #ff5e62, #ff9966, #423027);
+  position: absolute;
+  z-index: 1
+}
+
+.container {
+  position: relative;
+}
+
+.form{
+
+  position: relative;
+  padding: 3rem;
+  min-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #333;
+  background:rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+.page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1e71c4, #042130);
+  overflow: hidden;
+
+}
+input{
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  width: 80%;
+  outline: none;
+  color: #181515;
+  font-size: 10px;
+}
+button{
+background-image: linear-gradient(to right, #eb3349 0%,#f45c43 50%,#eb3349 100%);
+width: 20%;
+padding: 10px;
+text-align: center;
+text-transform: uppercase;
+translate: 0.5s;
+background-size:200% auto;
+color: white;
+border-radius: 0 10px  10px 0 ;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 10px;
+
+}
+button:hover{
+  background-position: right center;
+} */
+
+.cover{
+  background-color: #aaa8a8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100vw;
 }

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 0px 5px 1px;
+    color: white;
+    background-image: linear-gradient(to right, black, #04344d 60%  );
+
+    /* background-color: #030d47fd; */
+    height: 70px;
+    width: 100vw;
+position: fixed;
+z-index: 1;
+}
+.logo{
+    color: #FF9F1C;
+    font-style: italic;
+}
+.logo>span{
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration:underline  ;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-left: 10px;
+    width: 100px;
+    color: white;
+
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    /* box-shadow: 2px 0px 5px 1px #463826; */
+    color:  #FF9F1C ;
+    border-bottom:solid #FF9F1C 1px;
+
+}
+
+.nav-btn {
+    gap: 10px;
+
+}
+
+.login,
+.signIn {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px 20px 0  20px;
+    /* width: 80px; */
+    cursor: pointer;
+}
+
+.signIn {
+    background-color: #b37c2f;
+    color: white;
+
+}
+
+.login {
+    color: #c58731;
+}
+
+.signIn:hover {
+    /* text-shadow: 0px 1px #463826; */
+    background-color: #FF9F1C;
+    color: white;
+    text-decoration: underline;
+    border-bottom: solid rgb(172, 172, 172) 0.5px;
+}
